@@ -1,0 +1,24 @@
+Códigos em JavaScript 
+
+- window.alert('') = adiciona um pop-up à tela 
+- window.confirm('') = adiciona um pop-up de confirmação à tela
+- window.prompt('') = adiciona um pop-up de interação (respondido por meio de texto inserido pelo usuário)
+- O = em JavaScript é sempre lido como recebe
+- null = vazio
+- As variáveis são como vagas de um estacionamento, porém, armazenam memória ao invésde automóveis. Valores são colocados dentro das variáveis, e isso é chamado de atribuição. As variáveis tem valores distintos.
+  + Cada variável tem um nome, isso chama-se identificador.
+   - Os identificadores podem começar com letras, $ ou _
+   - Não podem começar com números
+   - É possível usar letras e números
+   - É possível usar acentos e símbolos
+   - Não podem conter espaços
+   - Não podem ser palavras reservadas 
+     -- Maiúsculas e minúsculas fazem diferença
+     -- Usar nome coerentes às variáveis
+     -- Evite se tornar o programador alfabeto
+  + As variáveis podem conter numbers, strings e valores booleanos (boolean) e são chamados Tipos Primitivos. 
+   - os numbers possuem tipos primitivos como infinity e NaN 
+   - temos o null e o undefined
+   - temos o object (array tambem)
+   - temos a Function
+   - Temos um comando para saber o tipo de uma variável, o typeof.
