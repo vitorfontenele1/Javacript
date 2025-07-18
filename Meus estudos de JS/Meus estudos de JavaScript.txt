@@ -4,3 +4,74 @@ Meus estudos de JavaScript
  - A linguagem de programação JavaScript é uma das mais importantes atualmente. Ela serve para tudo, mas principalmente como ferramenta para adicionar interatividade aos sites. Durante a metade da década de 90, um problema aparece: o HTML é muito estático. Foi nesse momento que Brendan Eich aparece com uma missão de desenvolver uma linguagem de programação que acabasse com esse problema, da qual a chamou de Mocha. Nesse mesmo período, outra linguagem nascia: a Java. A linguagem Java estava se tornando muito famosa na mídia e a Netscape, então, mudou o nome de sua linguagem para JavaScript, dado o sucesso da Java. Com o sucesso do JavaScript, a Microsoft começou a desenvolver sua própria linguagem, a JScript. Então, em 1997, a Netscape começou a padronizar sua linguagem por meio da ecma, surgindo o ecmascript. A briga entre Netscape e Microsoft acabou em 2002 e a Netscape acabou falindo.
  - Um cara que trabalhava lá não desistiu e criou a fundação Mozilla que viria a se tornar o navegador Firefox. Porém um novo navegador cresceu ainda mais em 2008, o Google Chrome que viria a se tornar o navegador mais famoso do mundo. O Chrome possui um motor extremamente potente de JavaScript (motor V8) e possui código aberto. Depois a Node utilizou o JavaScript para fora do navegador.
  - tecnologias surgiram com o JavaScript, como o jQuery, o Angular, o React, o View, etc.
+ - Tratamento de Dados
+  + As variáveis são armazenadores de dados. Devemos ter cuidado, pois o + pode ser usado para numbers e strings. 
+ - Operadores: Aritméticos, atribuidores, relacionais, lógicos, ternário.
+  + Operadores aritméticos:
+    -- Soma -> 5 + 2 = 7
+    -- Subtração -> 5 - 2 = 3 
+    -- Multiplicação -> 5*2 = 10
+    -- Divisão (real) -> 5/2 = 2.5
+    -- Resto da divisão inteira -> 5%2 = 1
+    -- Potenciação -> 5**2 = 25
+   + Mas, devemos tomar cuidado com a hierarquia matemática:
+    -- Primeiro faz-se os parênteses; 
+    -- Depois as potências;
+    -- Depois, multiplicação, divisão e restos;
+    -- Depois, somas e divisões;
+  + Operadores de Atribuição:
+    -- var a = 5 + 3 -- 8
+    -- var b = a % 5 -- 3
+    -- var c = 5 * b **2 -- 45
+    -- var d = 10 - a/2 -- 6
+    -- var e = 6*2/d -- 2
+    -- var f = b % e + 4 / e -- 3
+   + Auto-atribuições:
+    -- var n = 3
+      + n = n + 4 = 7, logo n se tornou 7. e podemos simplificar como n +=  4
+      + n = n - 5 = 2, logo n se torna 2. n -= 5
+      + n = n*4 = 8, logo n se torna 8. n += 4
+      + n = n/2 = 4, logo n se torna 4. n /= 2
+      + n = n**2 = 16, logo n se torna 16. n **= 2
+      + n = n % 5 = 1, logo n se torna 1. n %= 5
+    + incremento 
+     -- var x = 5
+      + x = x + 1 = 6 -> x += 1
+      + x = x - 1 = 5 -> x -= 1
+     -- Podemos usar o incremento:
+      + x ++
+      + x --
+   + Operadores relacionais:
+    - O resultado dos operadores relacionais é sempre true ou false 
+     -- 5 > 2 = true -> maior que
+     -- 7 < 4 = false -> menor que
+     -- 8 >= 8 = true -> maior ou igual que
+     -- 9 <= 7 = false -> menor ou igual que
+     -- 5 == 5 = true -> igual
+     -- 4 != 4 = false -> diferente de 
+   + Operadores relacionais de identidade 
+     -- 5 == 5 -> true
+     -- 5 == '5' -> true. Apesar de um ser number e o outro string, o JS analisa a dimensão de suas grandezas e, por isso, é true.
+    + Operador de identidade 
+     -- 5 === '5' = false. Pois nesse caso o operador testa o tipo.
+     -- 5 === 5 = true
+     -- 5 !== '5' = true
+   + Operadores lógicos:
+     -- ! = negação:
+        - !true = false
+        - !false = true
+     -- && = conjunção:
+        - true && true = true
+        - true && false = false 
+        - false && true = false
+        - false && false = false
+     -- || = disjunção
+        - true || true = true 
+        - true || false = true
+        - false || true = true
+        - false || false =  false
+      -- Primeiro operadores aritiméticos, depois relacionais e por ultimo lógicos  
+      -- ordem de execução dos operadores lógicos: !, && e ||
+    + Operador Ternário:
+      -- teste -?- true -:- false       
+          

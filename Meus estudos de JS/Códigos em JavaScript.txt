@@ -22,3 +22,32 @@ Códigos em JavaScript
    - temos o object (array tambem)
    - temos a Function
    - Temos um comando para saber o tipo de uma variável, o typeof.
+  + Para armazenar dados podemos usar  o var, como exemplo:
+
+- var nome = window.prompt('')
+  + Se quisermos fazer uma soma dessa forma, não funciona. Pois os comandos prompt e alert retornam strings e não numbers, logo soma será de strings e retornará uma string. Devemos, então, fazer uma transformação de tipos:
+
+String -> Number :
+ - Number.parseInt(n) -> Inteiro
+ - Number.parseFloat(n) -> Real
+ - Hoje em dia podemos usar apenas o Number(n)
+Number -> String :
+ - String(n)
+ - n.toString()
+  + Para facilitar a escrita, podemos utilizar o template string ($(s))
+
+ - As strings tem outros atributo de formatação:
+  + s.length -> quantos caracteres a string tem
+  + s.toUpperCase() -> tudo para maiúsculas 
+  + s.toLowerCase() -> tudo para minúsculas 
+
+ - document.write -> escreve na tela
+
+ - Os numbers também tem outros atributos de formatação:
+  + var n1 = 1541.6 
+     - n1 = 1541.6
+  + Para mais casas decimais podemos usar o n1.toFixed()
+  + Para trocar o ponto pela virgula, podemos usar o n1.toFixed().replace('.',',')
+  + Para utilizar valores monetários, podemos usar:
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+  
