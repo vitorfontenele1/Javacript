@@ -1,0 +1,17 @@
+Meus Estudos de JS 2
+
+-> DOM
+  - O DOM é um acrônimo para Document Object Model (Modelo de Objeto para Documentos). É um conjunto de objetos dentro do navegador que dá acesso aos componentes internos do website.
+  - Árvore DOM: tudo dentro de JS está dentro de uma raíz, o Window. Dentro do window existem vários objetos, como o location, document e hitory. Por exemplo, dentro de document, existe o html e dentro do html existem a head e o body. Dentro da head, podemos colocar o meta e o title, e dentro do body, o h1, os paragafos, a div, etc.
+  - Podemos acessar os componentes da árvore da seguinte forma: 
+    + por marca;
+      - getElementByTagName()    
+    + por ID;
+      - getElementById()
+    + por nome;
+      - getElementsByName()
+    + por classe; 
+      - getElementsByClassName()
+    + por seletor
+      - querySelector()
+      - querySelectorAll()
